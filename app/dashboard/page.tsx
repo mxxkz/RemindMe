@@ -82,7 +82,7 @@ const CollectionList = async () => {
             <CollectionBtn/>
                 <div className="flex flex-col gap-4 mt-6">
                     {collections.map((collection) => (
-                        <CollectionCard key={collection.id} collection={collection} />
+                        <CollectionCard key={collection.id.toString()} collection={collection} />
                     ))}
                 </div>
         </>
